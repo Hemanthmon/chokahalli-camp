@@ -236,6 +236,12 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
     /* Adjust body padding and font sizes for mobile */
     body {
         padding: 5px;
@@ -244,14 +250,18 @@ footer {
 
     /* Adjust header styles for mobile */
     .header {
-        padding: 5px 0;
+        
+        padding: 15px 0;
+        
     }
-
+    .header h3 {
+        font-size: 1.5em;
+    }
     /* Adjust card layout to be vertical on mobile */
     /* Adjust card layout for vertical orientation */
 .card {
 flex-direction: column !important;
-width: 100%;
+/* width: 100%; */
 }
 .content{
  padding: 10px;
