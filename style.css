@@ -251,14 +251,21 @@ footer {
     /* Adjust card layout for vertical orientation */
 .card {
 flex-direction: column !important;
+width: 100%;
+}
+.content{
+ padding: 10px;
 }
 
-.card {
-    flex-direction: column;
-}
+
 
 .image-container {
     order: 1;
+}
+
+.image-container img{
+    height: 100%;
+    width: 100%;
 }
 
 .info-container {
