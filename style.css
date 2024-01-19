@@ -1,0 +1,347 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.header h3 {
+    color: white;
+    margin: 0;
+}
+
+
+/* Card Styles */
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1000px;
+    
+    background-color: #f5f5f5; /* Light grey background */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 20px; 
+}
+
+.image-container {
+    flex: 1;
+    order: 2;
+}
+
+.info-container {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    order: 1;
+}
+
+.info-container h2 {
+    color: #333; 
+    }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.location-btn {
+    margin-top: 20px; 
+}
+
+.location-btn a {
+    display: inline-block;
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.location-btn a:hover {
+    background-color: #333;
+}
+
+
+.content {
+    padding: 90px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.centered-text {
+    text-align: center;
+    margin-bottom: 40px; 
+}
+
+.paragraph_1 p, .content > div > p {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+.content ul p {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.content li {
+    margin-top: 30px;
+}
+
+
+.horizontal-gallery {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10px; 
+    padding: 10px 0;
+}
+
+.horizontal-gallery img {
+    max-height: 200px; 
+    object-fit: cover;
+    border-radius: 5px; 
+    flex: 0 0 auto; 
+}
+
+h4, h3 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li b {
+    color: #333;
+}
+
+.centered-text {
+    text-align: center;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+} 
+    .update-box {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.update-box h2 {
+    color: #333;
+}
+
+.update-box p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.update-box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.update-box li {
+    margin-bottom: 8px;
+    color: #444;
+}
+.major-updates {
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Light grey border */
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.major-updates:hover {
+    transform: scale(1.05); /* Slightly enlarge the box on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+footer {
+    background: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff; /* Text color is set to white */
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.contact-info{
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+.share-info {
+    margin-bottom: 15px;
+    font-size: 18px;
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.share-info {
+    font-style: italic;
+    color: #999; /* Light grey text color */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjust body padding and font sizes for mobile */
+    body {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    /* Adjust header styles for mobile */
+    .header {
+        padding: 5px 0;
+    }
+
+    /* Adjust card layout to be vertical on mobile */
+    /* Adjust card layout for vertical orientation */
+.card {
+
+    flex-direction: column !important;
+    
+       
+
+      
+}
+
+
+
+/* Adjust image and info container styles */
+.image-container {
+    flex: none;
+    order: 1;
+    grid-row: 1;
+    width: 100%;
+}
+
+.info-container {
+    flex: none;
+    order: 1;
+    padding: 20px 0; 
+
+    /* padding: 20px; */
+    box-sizing: border-box;
+    font-size: 18px;
+    text-align: center; /* Center-align text for better readability */
+}
+
+.info-container h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.location-btn {
+    margin-top: 20px;
+}
+
+.location-btn a {
+    display: inline-block;
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.location-btn a:hover {
+    background-color: #333;
+}
+
+
+    /* Adjust paragraph margins in content */
+    .paragraph_1 p, .content > div > p {
+        margin-bottom: 15px;
+    }
+
+    /* Update styles for update boxes */
+    .update-box {
+        width: 90%;
+        padding: 15px;
+    }
+
+    /* Adjust major updates box */
+    .major-updates {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    /* Adjust footer layout for mobile */
+    footer {
+        padding: 5px;
+    }
+
+    .footer-content {
+        padding: 5px;
+    }
+
+    /* Contact and share info font size adjustments */
+    .contact-info, .share-info {
+        font-size: 16px;
+    }
+}
+
+
